@@ -90,7 +90,7 @@
     display: flex; align-items: center;
     padding: 120px 40px 80px;
     /* Película na cor da logo (navy) sobre a imagem de fundo para dar leitura */
-    background-image: linear-gradient(rgba(28, 50, 73, 0.85), rgba(28, 50, 73, 0.75)), url('fundo.jpeg');
+    background-image: linear-gradient(rgba(28, 50, 73, 0.85), rgba(28, 50, 73, 0.75)), url('casanova.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Efeito Parallax */
@@ -647,7 +647,7 @@
     .hero { padding: 140px 20px 80px; }
     section { padding: 80px 20px; }
     .pmoc-layout, .about-layout { grid-template-columns: 1fr; gap: 40px; }
-    .segments { grid-template-columns: 1fr; }
+    .segments { grid-template-columns: repeat(2, 1fr); }
     .trust-bar { padding: 20px; gap: 20px; flex-direction: column; align-items: flex-start; }
     .hero-stats { flex-direction: column; gap: 24px; align-items: center; }
     .nav-cta { display: none; }
@@ -708,11 +708,10 @@
 
 <!-- TRUST BAR -->
 <div class="trust-bar">
-  <div class="trust-item"><i class="ph ph-medal trust-icon"></i> Certificação ASBRAV</div>
   <div class="trust-item"><i class="ph ph-clipboard-text trust-icon"></i> PMOC e Normas Técnicas</div>
   <div class="trust-item"><i class="ph ph-lightning trust-icon"></i> Especialista em Elétrica</div>
   <div class="trust-item"><i class="ph ph-certificate trust-icon"></i> Equipe Certificada IPAF</div>
-  <div class="trust-item"><i class="ph ph-crane trust-icon"></i> Operação com PEMT</div>
+  <div class="trust-item"><i class="ph ph-hard-hat trust-icon"></i> Especialização em Trabalho nas Alturas</div>
   <div class="trust-item"><i class="ph ph-buildings trust-icon"></i> Projetos B2B e B2C</div>
 </div>
 
@@ -730,6 +729,7 @@
         <i class="ph ph-wrench service-icon"></i>
         <h3>Instalação</h3>
         <p>Instalação de ar-condicionado residencial, comercial e industrial seguindo rigorosamente as recomendações dos fabricantes e normas técnicas.</p>
+        <span class="service-tag">Split • Multi Split • Inverter</span>
       </div>
 
       <div class="service-card reveal">
@@ -756,8 +756,8 @@
       <div class="service-card reveal">
         <i class="ph ph-plug service-icon"></i>
         <h3>Infraestrutura Elétrica</h3>
-        <p>Dimensionamento elétrico dedicado. Execução de circuitos, instalação de quadros de comando e proteções específicas para sistemas Inverter e VRF.</p>
-        <span class="service-tag">Quadros • Dimensionamento</span>
+        <p>Dimensionamento elétrico dedicado. Execução de circuitos, instalação de quadros de comando e proteções específicas para sistemas de climatização e refrigeração.</p>
+        <span class="service-tag">Climatização • Refrigeração</span>
       </div>
 
       <div class="service-card reveal">
@@ -787,7 +787,7 @@
           <li><i class="ph ph-check-circle"></i> Garantia da qualidade do ar interior (QAI)</li>
           <li><i class="ph ph-check-circle"></i> Conformidade sanitária com a ANVISA</li>
           <li><i class="ph ph-check-circle"></i> Redução no consumo de energia elétrica</li>
-          <li><i class="ph ph-check-circle"></i> Aumento da vida útil dos compressores</li>
+          <li><i class="ph ph-check-circle"></i> Aumento da vida útil dos sistemas</li>
         </ul>
         <a href="https://wa.me/5551981951015?text=Quero%20agendar%20uma%20avaliação%20de%20PMOC." target="_blank" class="btn-primary" style="margin-top:16px;">
           Solicitar Avaliação Técnica
@@ -854,7 +854,7 @@
       </div>
       <div class="segment-card reveal">
         <i class="ph ph-office-chair segment-icon"></i>
-        <h3>Prédios</h3>
+        <h3>Ambientes Comerciais</h3>
         <p>Lojas, escritórios e clínicas. Foco em performance térmica e bem-estar para clientes e equipe.</p>
       </div>
     </div>
@@ -871,7 +871,7 @@
         </div>
         <div class="about-cert">
           <div class="about-cert-title">Equipe Certificada</div>
-          <div class="about-cert-desc">IPAF · Operação com PEMT<br>5+ Anos de Mercado</div>
+          <div class="about-cert-desc">IPAF · NRs · 5+ Anos de Mercado<br>Especialização em Trabalho nas Alturas</div>
         </div>
       </div>
       <div class="about-text reveal">
@@ -892,12 +892,6 @@
         <p style="font-style: italic; color: var(--accent); font-weight: 600;">
           Casa Nova Climatização, qualidade que você sente, confiança que permanece.
         </p>
-        
-        <!-- Galeria de Certificados -->
-        <div class="cert-gallery">
-          <img src="certificado1.jpeg" alt="Certificado Técnico 1">
-          <img src="certificado2.jpeg" alt="Certificado Técnico 2">
-        </div>
         
       </div>
     </div>
@@ -942,7 +936,7 @@
     <span class="section-label">Contato</span>
     <h2 class="section-title">VAMOS CONVERSAR SOBRE SEU PROJETO?</h2>
     <p>
-      Nossa equipe técnica está pronta para avaliar sua demanda em Porto Alegre e Região Metropolitana.
+      Nossa equipe técnica está pronta para avaliar sua demanda em Porto Alegre e Região Metropolitana, Serra e Litoral.
     </p>
     <div class="cta-channels">
       <a href="https://wa.me/5551981951015?text=Olá%20Alexandre!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank" class="channel-btn channel-whatsapp">
