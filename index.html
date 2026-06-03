@@ -400,6 +400,8 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-top: 48px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .segment-card {
@@ -409,6 +411,8 @@
     padding: 40px 28px;
     text-align: center;
     transition: all 0.3s;
+    min-width: 0;
+    box-sizing: border-box;
   }
 
   .segment-card:hover {
@@ -650,13 +654,13 @@
     .hero { padding: 140px 20px 80px; }
     section { padding: 80px 20px; }
     .pmoc-layout, .about-layout { grid-template-columns: 1fr; gap: 40px; }
-    .segments { grid-template-columns: 1fr 1fr; gap: 12px; }
-    #segmentos { padding: 60px 16px; }
-    .segment-card { padding: 24px 16px; }
+    .segments { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    #segmentos { padding: 60px 16px; overflow: hidden; }
+    .segment-card { padding: 20px 12px; min-width: 0; word-break: break-word; }
   }
 
   @media (max-width: 480px) {
-    .segments { grid-template-columns: 1fr; }
+    .segments { grid-template-columns: repeat(2, 1fr); }
     .trust-bar { padding: 20px; gap: 20px; flex-direction: column; align-items: flex-start; }
     .hero-stats { flex-direction: column; gap: 24px; align-items: center; }
     .nav-cta { display: none; }
@@ -738,6 +742,7 @@
         <i class="ph ph-wrench service-icon"></i>
         <h3>Instalação</h3>
         <p>Instalação de ar-condicionado residencial, comercial e industrial seguindo rigorosamente as recomendações dos fabricantes e normas técnicas.</p>
+        <span class="service-tag">Split • Multi Split • Inverter</span>
       </div>
 
       <div class="service-card reveal">
@@ -834,7 +839,7 @@
       <span class="section-label">Onde Atuamos</span>
       <h2 class="section-title">TEMOS AS MELHORES OPÇÕES PARA:</h2>
     </div>
-    <div class="segments" style="grid-template-columns: repeat(3, 1fr);">
+    <div class="segments">
       <div class="segment-card reveal">
         <i class="ph ph-hospital segment-icon"></i>
         <h3>Hospitais</h3>
