@@ -647,7 +647,13 @@
     .hero { padding: 140px 20px 80px; }
     section { padding: 80px 20px; }
     .pmoc-layout, .about-layout { grid-template-columns: 1fr; gap: 40px; }
-    .segments { grid-template-columns: repeat(2, 1fr); }
+    .segments { grid-template-columns: 1fr 1fr; gap: 12px; }
+    #segmentos { padding: 60px 16px; }
+    .segment-card { padding: 24px 16px; }
+  }
+
+  @media (max-width: 480px) {
+    .segments { grid-template-columns: 1fr; }
     .trust-bar { padding: 20px; gap: 20px; flex-direction: column; align-items: flex-start; }
     .hero-stats { flex-direction: column; gap: 24px; align-items: center; }
     .nav-cta { display: none; }
@@ -711,7 +717,7 @@
   <div class="trust-item"><i class="ph ph-clipboard-text trust-icon"></i> PMOC e Normas Técnicas</div>
   <div class="trust-item"><i class="ph ph-lightning trust-icon"></i> Especialista em Elétrica</div>
   <div class="trust-item"><i class="ph ph-certificate trust-icon"></i> Equipe Certificada IPAF</div>
-  <div class="trust-item"><i class="ph ph-hard-hat trust-icon"></i> Especialização em Trabalho nas Alturas</div>
+  <div class="trust-item"><i class="ph ph-hard-hat trust-icon"></i> Especialização em Trabalho em Alturas</div>
   <div class="trust-item"><i class="ph ph-buildings trust-icon"></i> Projetos B2B e B2C</div>
 </div>
 
